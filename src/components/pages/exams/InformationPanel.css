@@ -1,0 +1,35 @@
+.information-panel {
+    background-color: transparent;
+    
+    padding: 15px 50px;
+    width: fit-content;
+    position: relative;
+    top: 10px;
+    justify-content: center;
+    margin-bottom: 80px;
+    
+    
+   
+}
+.information-panel > h3 {
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+
+}
+
+.information-panel > p {
+    justify-content: center;
+    margin-top: 15px;
+    
+}
+
+.information-panel-list > li {
+    display: block;
+    width: 220px;
+    float: left;
+    font-size: 15px;
+    color: darkgrey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 8px;
+}

@@ -1,0 +1,53 @@
+
+img {
+  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+body {
+    background: rgb(255, 255, 255);
+  }
+  .hidden {
+    opacity:0;
+  }
+  .console-container {
+   
+    font-family: Tahoma, Geneva, Verdana;
+    font-size:6em;
+    margin-top: 10px;
+    display:block;
+    margin-bottom: 30px;
+    color:white;
+    align-items: center;
+    text-align: center;
+    
+    
+   
+    
+    
+    
+  }
+  .console-underscore {
+     display: inline-block;
+    position:relative;
+    top:-0.14em;
+    left:10px;
+  }
+
+  .box2 {
+    background: rgb(0, 0, 0);
+    display: flex;
+    border: 2px solid #5a5a5a79;
+    box-shadow: rgb(92, 91, 91);
+    border-radius: 8px;
+    z-index: 3;
+    width: 700px;
+    height: 300px; 
+   
+    
+    
+    
+}
