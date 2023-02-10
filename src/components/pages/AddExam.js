@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import '../../App.css';
 import './form.css'
-import './add.css'  
+import './add.css'
 
 export default function AddExam() {
 
@@ -19,42 +19,45 @@ export default function AddExam() {
 
     window.scrollTo(0, 0)
     return <div className='form-container'>
-        <div class="container2">
+        <div className="container2">
 
-            <div class="card">
-                <div class="card-image">
-                    <h2 class="card-heading">
+            <div className="card">
+                <div className="card-image">
+                    <h2 className="card-heading">
                         Get started
                         <small>Let us create your account</small>
                     </h2>
                 </div>
-                <form class="card-form">
-                    <div class="input">
-                        <input className="input-field" type="email"
-
+                <form className="card-form">
+                    <div className="input">
+                        <input 
+                            type="email"
+                           
                             value={email}
                             onChange={(event) => setEmail(event.target.value)}
-                            required />
+                            required className="input-field"/>
+
                         <label className="input-label">Email</label>
                     </div>
-                    <div class="input">
+                    <div className="input">
                         <input type="text"
-                            
+
                             className="input-field"
                             value={subject}
                             onChange={(event) => setSubject(event.target.value)}
-                            required classname="input-field" />
-                        <label class="input-label">Asignatura</label>
+                            required  />
+
+                        <label className="input-label">Asignatura</label>
                     </div>
-                    <div class="input">
+                    <div className="input">
                         <input type="file" classname="upload-button" onChange={(event) => setFile(event.target.files[0])} required />
-                      
+
                     </div>
-                    <div class="action">
-                        <button class="action-button">Get started</button>
+                    <div className="action">
+                        <button class="action-button">Enviar</button>
                     </div>
                 </form>
-                <div class="card-info">
+                <div className="card-info">
                     <p> Gracias por tu contribucion <a href="/">Findtest</a></p>
                 </div>
             </div>

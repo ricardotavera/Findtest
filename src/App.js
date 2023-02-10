@@ -25,15 +25,12 @@ function App() {
       <Navbar />
         <Switch>
           
-          <Route path='/add' component={AddExam}/>
+          {/* <Route path='/add' component={AddExam}/> */}
           <Route path='/average' component={Average}/>
-          <Route path='/cicle' component={Cicle}/>
-          <Route path='/recomendations' component={Recomendations}/>
-          <Route path='/sign-up' component={SignUp}/>
           <Route path='/' exact component={Exams} />
           <Route path='/parcial/'  component={Parcial}/> 
           <Route path='/coder' component={Programming}/>
-          <Route path='/popup' component={Popup}/>
+          {/* <Route path='/popup' component={Popup}/> */}
           
 
         </Switch>

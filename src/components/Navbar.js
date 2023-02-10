@@ -36,11 +36,11 @@ function Navbar() {
                </div>
                <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                    <li className='nav-item'>
-                       <Link to='/add'  className='nav-links' onClick={closeMobileMenu}>
+                       <a target='_blank' href='https://docs.google.com/forms/d/e/1FAIpQLSdPDv-wuDbB4Ygp7rhz85BLqLrbOs4JMZ_eai8Z-YFLzthRPA/viewform'   className='nav-links' onClick={closeMobileMenu}>
                             Añadir un examen
-                       </Link>
+                       </a>
                    </li>
-                   <li className='nav-item'>
+                   {/* <li className='nav-item'>
                        <Link to='/average'  className='nav-links' onClick={closeMobileMenu}>
                             Mi promedio
                        </Link>
@@ -49,15 +49,15 @@ function Navbar() {
                        <Link to='/well'  className='nav-links' onClick={closeMobileMenu}>
                            Somos
                        </Link>
-                   </li>
-                   <li className='nav-item'>
-                       <Link to='/sign-up'  className='nav-links-mobile' onClick={closeMobileMenu}>
-                           Sign Up
-                       </Link>
+                   </li> */}
+                       <li className='nav-item'>
+                       <a target='_blank' to='https://docs.google.com/forms/d/e/1FAIpQLSdPDv-wuDbB4Ygp7rhz85BLqLrbOs4JMZ_eai8Z-YFLzthRPA/viewform'  className='nav-links-mobile' onClick={closeMobileMenu}>
+                           Agregar Examen
+                       </a>
                    </li>
                    
                </ul>
-
+          
            </div>
        </nav>
        </>

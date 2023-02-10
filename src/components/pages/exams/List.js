@@ -23,8 +23,8 @@ function List(props) {
         
         <p className='no-coincidences-message'>
 
-            
-<i className="fa-alarm"></i>
+<i className="bi bi-emoji-frown-fill"></i>
+                  
                     No se encontraron asignaturas que coincidan con la busqueda...
                 </p> }
                
