@@ -2,6 +2,8 @@ import React from 'react';
 import './StyleExams.css';
 import List from './List';
 import Menu from './Menu';
+import '../../HeroSection'
+import './SearchPage.css'
 
 
 
@@ -165,14 +167,16 @@ class SearchPage extends React.Component {
     }
   }
 
-
+  
 
   render() {
     
     return (
-      <div className="app">
+      <div className="search-content">
         {window.scrollTo(0, 0)}
-        <Menu onsearch={this.onSearch} />
+
+
+        <Menu onsearch={this.onSearch} />        
         <List items={this.state.subjectsCopy}/>
          
       </div>

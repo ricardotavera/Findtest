@@ -8,19 +8,10 @@ function Menu(params) {
   
     return(
         <div className="container">
-            <div className="subcontainer">
-                <div className="logo">
-                    
-
-                </div>
-                <div className='box' >
-                <div className="search" >
+            
+               <div className='hero-text'>Stay hungry, stay foolish</div>
                     <Search onsearch={params.onsearch} />
-
-                </div>
-                </div>
-
-            </div>
+            
         </div>
        
     );

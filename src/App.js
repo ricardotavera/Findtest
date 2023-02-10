@@ -2,7 +2,6 @@
 import './App.css';
 import Navbar from './components/Navbar'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import Home from './components/pages/Home';
 import AddExam from './components/pages/AddExam';
 import Average from './components/pages/Average';
 import Cicle from './components/pages/Cicle';
@@ -16,6 +15,7 @@ import Popup from './components/pages/Popup';
 
 
 
+
 /* render={props => <Parcial asignature='Hello, I can pass as props' />} */
 
 function App() {
@@ -24,13 +24,13 @@ function App() {
     <Router>
       <Navbar />
         <Switch>
-          <Route path='/' exact component={Home} />
+          
           <Route path='/add' component={AddExam}/>
           <Route path='/average' component={Average}/>
           <Route path='/cicle' component={Cicle}/>
           <Route path='/recomendations' component={Recomendations}/>
           <Route path='/sign-up' component={SignUp}/>
-          <Route path='/exams' component={Exams} />
+          <Route path='/' exact component={Exams} />
           <Route path='/parcial/'  component={Parcial}/> 
           <Route path='/coder' component={Programming}/>
           <Route path='/popup' component={Popup}/>

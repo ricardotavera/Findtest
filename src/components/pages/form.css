@@ -12,6 +12,26 @@
     
 }
 
+.form-container{
+    
+    height: 85vh;
+    padding: 24px;
+    background: linear-gradient(to right, rgb(26 23 23), #0059ff);
+
+}
+
+.upload-button {
+	font: inherit;
+	font-size: 1.25rem;
+	padding: 1em;
+	width: 100%;
+	font-weight: 500;
+	border-radius: 6px;
+	border: 2px solid blue;
+	color: #fff;
+
+  }
+
 .container_1{
     
     display: flex;
@@ -65,4 +85,6 @@
     margin-left: 60px;
     
 }
+
+
 

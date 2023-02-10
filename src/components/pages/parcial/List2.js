@@ -3,7 +3,7 @@ import Item2 from './Item2';
 import '../exams/List.css';
 function List2(props) {
     return (
-        <div className="List">
+        <div className="list">
            
            
         <br/>
