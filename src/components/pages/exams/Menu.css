@@ -11,9 +11,8 @@
     margin-bottom: 69px;
     height: 50vh;
     background: rgb(63,94,251);
-    background-image: ;
-    /* background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%); */
-    background: linear-gradient(45deg, #2f78ff 0%, #006effdb 100%);
+    background: rgb(63,203,251);
+    background:  linear-gradient(45deg, rgb(63 64 251) 5%, rgb(63, 189, 243) 100%);
     overflow: hidden;
     
 }
@@ -26,29 +25,31 @@
     list-style: none;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.242);
-    animation: animate 42s linear infinite;
+    animation: animate 20s linear infinite;
+    border-radius: 30px;
 }
 
 
 
-@keyframes animate {
+/* @keyframes animate {
     0%{
         transform: translateY(0) rotate(0deg);
         opacity: 0;
        
     }
     100%{
-        transform: rotate(720deg);
+        transform: translateY(-100) rotate(720deg);
         opacity: 1;
-        border-radius: 50%;
+        
     }
-}
+} */
 
 .background li:nth-child(1) {
     left: 4%;
     width: 115px;
     height: 115px;
     bottom: 348px;
+    animation-delay: 3s;
     rotate: 30deg;
    
 }
@@ -57,7 +58,7 @@
     width: 202px;
     height: 202px;
     bottom: 515px;
-    animation-delay: 6s;
+    animation-delay: 3s;
     rotate: 30deg;
 }
 .hero-text{
@@ -200,6 +201,38 @@
     }
 }
 
-@media screen and (max-width: 360px) {
-    
+@media screen and (max-width: 900px) {
+
+
+   .hero-text {
+    width: auto;
+    font-size: x-large;
+    margin-top: -20px;
+    padding: 10px;
+   }
+
+   .container {
+    height: 30vh;
+   }
+
+   .search input {
+    height: 50px;
+    width: 70%;
+    background-color: transparent;
+    background: #fff;
+    display: flex;
+    border: 2px solid #5a5a5a79;
+    border-radius: 8px;
+    color: rgba(0,0,0,.87);
+    word-wrap: break-word;
+    outline: none;
+    padding: 5px 20px;
+    margin-top: auto;
+    display: flex;
+    flex: 100% 1;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+   
 }

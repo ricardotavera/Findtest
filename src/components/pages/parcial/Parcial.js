@@ -3,6 +3,7 @@ import '../exams/StyleExams.css';
 import List2 from './List2';
 import {BrowserRouter as Router,Route,
   Redirect,Switch} from 'react-router-dom';
+import { Link } from 'react-router-dom';  
 
 const Parcial = (props) => {
 
@@ -20,7 +21,11 @@ const Parcial = (props) => {
   {window.scrollTo(0, 0)}
 
   return props ? (
-    <div className="app">
+    <div className="">
+      <Link  to='/' className='home'>
+      
+      <i class="bi bi-house-door-fill"></i>
+      </Link>
 
         <h2 className='title2'> {props.location.asignature}</h2>
         <List2 items={props.location.params}/>

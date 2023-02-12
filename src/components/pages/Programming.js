@@ -189,7 +189,7 @@ class Programming extends React.Component {
               <ul className='cards__items'>
                 <CardItem src="../images/astar.jpg" text='Visualizador optimización de ruta con A*' label='Python' path2='https://replit.com/@DanielRicardoR5/Astar-finding-path#main.py' />
                 <CardItem src="../images/pathVisualizer.jpg" text='Algoritmo de Dijkstra' label='JavaScript' path2="https://github.com/clementmihailescu/Pathfinding-Visualizer-Tutorial/blob/master/src/algorithms/dijkstra.js" />
-                <CardItem src="../images/socorro.jpeg" text='Otimizacion de recorrido en Socorro (Sder)' label='Python' path2='https://colab.research.google.com/drive/1oiZTCINTzyUrrHLeI4t2CINnWWJ4eovp#scrollTo=VqAXo4ub2E6r' />
+                <CardItem src="../images/socorro.jpeg" text='Optimizacion de recorrido en Socorro (Sder)' label='Python' path2='https://colab.research.google.com/drive/1oiZTCINTzyUrrHLeI4t2CINnWWJ4eovp#scrollTo=VqAXo4ub2E6r' />
 
               </ul>
 
@@ -217,8 +217,8 @@ class Programming extends React.Component {
 
               <ul className='cards__items'>
                 <CardItem src="../images/automatas.jpg" text='Libro Automatas y Lenguajes' label='PDF' path2='https://drive.google.com/file/d/14kmqAmXiqEd1nJjP34nmihLg1reAcp6c/view?usp=sharing' />
-                <CardItem src="../images/autom.jpg" text='Automata finito determinista (AFD)' label='Python' path2='https://clementmihailescu.github.io/Pathfinding-Visualizer/#' />
-                <CardItem src="../images/autom.jpg" text='Automata finito no determinista (AFN)' label='Python' path2='https://visualgo.net/' />
+                <CardItem src="../images/autom.jpg" text='Automata finito determinista (DFA)' label='Python' path2='https://blog.devgenius.io/finite-automata-implement-a-dfa-in-python-64dc3d7005d9' />
+                <CardItem src="../images/autom.jpg" text='Automata finito no determinista (NFA)' label='Python' path2='https://www.geeksforgeeks.org/designing-non-deterministic-finite-automata-set-1/?ref=lbp' />
 
               </ul>
 
