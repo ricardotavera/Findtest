@@ -7,9 +7,10 @@ function Menu(params) {
 
   
     return(
-        <div className="container">
-            
-               <div className='hero-text'>Stay hungry, stay foolish</div>
+        <div className="container background">
+   
+
+               <div className='hero-text'>¿Qué deseas estudiar hoy?</div>
                     <Search onsearch={params.onsearch} />
             
         </div>
