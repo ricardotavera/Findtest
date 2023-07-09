@@ -1,12 +1,17 @@
-
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: inamespace
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: deployment
+  name: ideployment
+  namespace: inamespace
   labels:
     app: findtest
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: findtest
@@ -24,7 +29,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: my-app-service
+  name: iservice
 spec:
   selector:
     app: findtest
@@ -32,5 +37,5 @@ spec:
     - protocol: TCP
       port: 3000
       targetPort: 3000
-      nodePort: 30200
+      nodePort: 30300
   type: NodePort
