@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ideployment
+  labels:
+    app: findtest
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: findtest
+  template:
+    metadata:
+      labels:
+        app: findtest
+    spec:
+      containers:
+      - name: findtest
+        image: dandev64/findtest:latest
+        ports:
+        - containerPort: 3000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: iservice
+spec:
+  selector:
+    app: findtest
+  ports:
+    - protocol: TCP
+      port: 3000
+      targetPort: 3000
+      nodePort: 30300
+  type: NodePort
