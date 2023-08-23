@@ -10,7 +10,6 @@
     background-color: #242424;
     margin-bottom: 69px;
     height: 50vh;
-    background: rgb(63,94,251);
     background: rgb(63,203,251);
     background:  linear-gradient(45deg, rgb(63 64 251) 5%, rgb(63, 189, 243) 100%);
     overflow: hidden;
@@ -25,24 +24,31 @@
     list-style: none;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.242);
-    animation: animate 20s linear infinite;
+    animation: animate 50s linear infinite;
     border-radius: 30px;
 }
 
 
 
-/* @keyframes animate {
+@keyframes animate {
     0%{
         transform: translateY(0) rotate(0deg);
         opacity: 0;
-       
+
     }
-    100%{
-        transform: translateY(-100) rotate(720deg);
+    50%{
+        transform: translateY(100) translateX(100) rotate(720deg);
         opacity: 1;
+        width: 30%;
+    
+    }
+
+    100%{
+        transform: translateY(0) rotate(720deg);
+        opacity: 0;
         
     }
-} */
+}
 
 .background li:nth-child(1) {
     left: 4%;
